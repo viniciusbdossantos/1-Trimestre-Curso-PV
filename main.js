@@ -19,10 +19,11 @@ function calculaTempo(tempoObjetivo) {
     if (tempoFinal > 0) {
         return dias + " dias, " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos.";
     } else {
-        return "Prazo finalizado!";
+        return [0, 0, 0, 0];
     }
 }
 function atualizaCronometro() {
+    document.getElementById
     for (let i=0; i<contadores.length;i++) {
         contadores[i].textContent = calculaTempo(tempos[i]);
     
@@ -32,7 +33,7 @@ function começaCronometro() {
     atualizaCronometro();
     setInterval(atualizaCronometro, 1000);
 }
-//começaCronometro();
+começaCronometro();
 for(let i=0;i <botoes.length;i++){
     botoes[i].onclick = function(){
 
